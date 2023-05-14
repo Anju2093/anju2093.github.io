@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  /* background-color: coral; */
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  height: 64px;
+  /* background-color: indigo; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  padding: 0 16px;
+}
+
+.nav-item {
+  display: none;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+h1,
+p {
+  width: 80%;
+  text-align: center;
+}
+
+.cta-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding: 16px;
+  transition: all 200ms ease-in;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+a:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+  border: none;
+  padding: 16px;
+}
+
+.black {
+  background: black;
+  color: white;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.image {
+  height: 300px;
+}
+
+.actions {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.action-1 {
+  border: 1px solid black;
+  background: none;
+  padding: 4px;
+}
+
+.action-2 {
+  background: none;
+  padding: 4px;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
+
+/* When the browser is at least 600px and above */
+@media screen and (min-width: 600px) {
+  /* .selector {
+    Apply some styles
+  } */
+
+  .nav-item {
+    display: block;
+  }
+
+  .container {
+    margin: auto;
+    width: 75%;
+    flex-direction: row;
+    padding: 0;
+    /* justify-content: space-between; */
+  }
+
+  .content {
+    align-items: flex-start;
+background-color:fff;
+width:30%;
+    padding: 16px 0;
+  }
+
+  h1,
+  p {
+    text-align: left;
+  }
+
+  .text {
+    width: 50%;
+  }
+
+  .cta-group {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .cta {
+    width: 142px;
+  }
+
+  .image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+}
